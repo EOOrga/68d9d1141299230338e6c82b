@@ -1,0 +1,6 @@
+using $gpc-app-builder  create this app
+app title: ASS DEVEL AMENA MOYENNE VALLEE
+app idea: An operations-focused app offering appointment booking, patient records, staff training courses, and audit logs to streamline daily business tasks.
+company name: ASS DEVEL AMENA MOYENNE VALLEE HERAULT
+email address: [email to be provided later]
+the two icon and featured graphics contained in docs folder

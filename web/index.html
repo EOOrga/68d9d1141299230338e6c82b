@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ASS DEVEL AMENA MOYENNE VALLEE</title>
+  <meta name="description" content="Local operations app for appointments, patient records, staff training, and audit notes.">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="favicon.png">
+  <style>
+    :root {
+      --ink: #173747;
+      --primary: #2b5672;
+      --secondary: #b86a3a;
+      --tertiary: #3c7b68;
+      --paper: #f6f8f4;
+      --line: #dfe7e2;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.5;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    header {
+      position: absolute;
+      inset: 0 0 auto;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 22px clamp(20px, 5vw, 72px);
+      color: var(--white);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      letter-spacing: 0;
+    }
+
+    .brand img {
+      width: 42px;
+      height: 42px;
+      border-radius: 8px;
+    }
+
+    nav {
+      display: flex;
+      gap: 18px;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    nav a {
+      text-decoration: none;
+    }
+
+    .hero {
+      position: relative;
+      min-height: 78vh;
+      display: grid;
+      align-items: end;
+      padding: 120px clamp(20px, 5vw, 72px) 64px;
+      background: #173747 url("featured.png") center / cover no-repeat;
+      color: var(--white);
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(16, 37, 48, 0.66);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 760px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(40px, 7vw, 78px);
+      line-height: 0.98;
+      letter-spacing: 0;
+    }
+
+    .hero p {
+      max-width: 620px;
+      margin: 20px 0 0;
+      font-size: clamp(18px, 2vw, 22px);
+      color: #edf4f0;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0 18px;
+      border-radius: 8px;
+      border: 1px solid transparent;
+      text-decoration: none;
+      font-weight: 800;
+    }
+
+    .button.primary {
+      background: var(--white);
+      color: var(--ink);
+    }
+
+    .button.secondary {
+      border-color: rgba(255, 255, 255, 0.72);
+      color: var(--white);
+    }
+
+    main {
+      padding: 46px clamp(20px, 5vw, 72px) 64px;
+    }
+
+    .section-title {
+      max-width: 760px;
+      margin-bottom: 22px;
+    }
+
+    .section-title h2 {
+      margin: 0;
+      font-size: clamp(28px, 4vw, 44px);
+      letter-spacing: 0;
+    }
+
+    .section-title p {
+      margin: 10px 0 0;
+      color: #435662;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .card {
+      min-height: 188px;
+      padding: 20px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--white);
+    }
+
+    .card strong {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    .bar {
+      margin-top: 42px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 20px;
+      align-items: center;
+      padding: 22px;
+      border-left: 5px solid var(--secondary);
+      background: var(--white);
+    }
+
+    footer {
+      padding: 32px clamp(20px, 5vw, 72px);
+      border-top: 1px solid var(--line);
+      background: var(--white);
+      color: #435662;
+    }
+
+    @media (max-width: 860px) {
+      header {
+        position: absolute;
+        align-items: flex-start;
+      }
+
+      nav {
+        display: none;
+      }
+
+      .hero {
+        min-height: 72vh;
+      }
+
+      .grid,
+      .bar {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img src="favicon.png" alt="">
+      <span>ASS DEVEL AMENA MOYENNE VALLEE</span>
+    </div>
+    <nav aria-label="Primary navigation">
+      <a href="#workflow">Workflow</a>
+      <a href="#privacy">Privacy</a>
+      <a href="mailto:contact@amena-moyenne-vallee.fr">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>ASS DEVEL AMENA MOYENNE VALLEE</h1>
+      <p>Operations-focused Android app for booking appointments, maintaining patient records, tracking staff courses, and keeping a local audit trail.</p>
+      <div class="actions">
+        <a class="button primary" href="#workflow">View workflow</a>
+        <a class="button secondary" href="mailto:contact@amena-moyenne-vallee.fr">Contact support</a>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section id="workflow">
+      <div class="section-title">
+        <h2>Daily operations in one local workspace</h2>
+        <p>The Android app keeps routine business tasks organized without accounts, cloud sync, analytics, advertising identifiers, or runtime permission requests.</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <strong>Appointment booking</strong>
+          <p>Schedule patient visits, review upcoming bookings, and close completed appointments from the daily board.</p>
+        </article>
+        <article class="card">
+          <strong>Patient records</strong>
+          <p>Save priority, last visit, and care plan notes in local app storage on the Android device.</p>
+        </article>
+        <article class="card">
+          <strong>Staff training</strong>
+          <p>Assign operational courses and update progress during team reviews.</p>
+        </article>
+        <article class="card">
+          <strong>Audit notes</strong>
+          <p>Every local action adds a simple audit entry for review and accountability.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="privacy" class="bar">
+      <div>
+        <strong>Privacy-first by design</strong>
+        <p>Records stay on the device until the app data is deleted or the app is uninstalled.</p>
+      </div>
+      <a class="button primary" href="mailto:contact@amena-moyenne-vallee.fr">contact@amena-moyenne-vallee.fr</a>
+    </section>
+  </main>
+
+  <footer>
+    ASS DEVEL AMENA MOYENNE VALLEE HERAULT
+  </footer>
+</body>
+</html>
