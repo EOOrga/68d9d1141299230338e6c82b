@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "applications": {
+    "com.taziggg100.amena_vallee_ops": {
+      "title": "ASS DEVEL AMENA MOYENNE VALLEE",
+      "short_description": "Local operations tracking for bookings, patient records, staff training, and...",
+      "full_description": "ASS DEVEL AMENA MOYENNE VALLEE helps daily teams manage appointment booking, patient record follow up, staff course progress, and audit history from a focused Android workspace.\n\nThe app is built for local operations use. Records and preferences stay on the device, so teams can organize business tasks without account registration, cloud sync, analytics, advertising, or runtime permission requests.",
+      "source_screenshots": [
+        "docs/screens/1.png",
+        "docs/screens/2.png",
+        "docs/screens/3.png"
+      ],
+      "generated_from": "existing repository listing metadata and README",
+      "generated_at": "2026-10-02T21:21:33.899050+00:00"
+    }
+  }
+}
