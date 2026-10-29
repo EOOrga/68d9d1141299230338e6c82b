@@ -239,7 +239,7 @@ class DashboardScreen extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 8, 16, 96),
         children: [
           const AppHeader(
-            title: 'Operations desk',
+            title: 'ASS DEVEL AMENA MOYENNE VALLEE',
             subtitle:
                 'Appointments, patient records, staff courses, and audit notes stay local to this device.',
           ),
