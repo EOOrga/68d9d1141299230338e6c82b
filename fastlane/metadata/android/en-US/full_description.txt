@@ -1,0 +1,3 @@
+ASS DEVEL AMENA MOYENNE VALLEE helps daily teams manage appointment booking, patient record follow up, staff course progress, and audit history from a focused Android workspace.
+
+The app is built for local operations use. Records and preferences stay on the device, so teams can organize business tasks without account registration, cloud sync, analytics, advertising, or runtime permission requests.
